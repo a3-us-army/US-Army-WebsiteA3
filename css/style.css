@@ -572,7 +572,7 @@ a:visited {
 }
 
 .us_section2 {
-	background-image: url(/images/socials.jpg);
+	background-image: url(/images/main-bg.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -625,8 +625,8 @@ a:visited {
 	font-weight: bold;
 }
 
-.heathy_section {
-	background-image: url(../images/healthy-bg.jpg);
+.healthy_section {
+	background-image: url(../images/main-bg.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -671,7 +671,7 @@ a:visited {
 }
 
 .trainer_section {
-	background-image: url(/images/main-bg.png);
+	background-image: url(/images/about_background.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -709,6 +709,57 @@ a:visited {
 }
 
 .trainer_section .box .social_box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 225px;
+	padding: 12px 45px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	margin-top: -25px;
+}
+.trainer_section2 {
+	background-image: url(/images/main-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+}
+
+.trainer_section2 .box {
+	margin-top: 55px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+}
+
+.trainer_section2 .box .name h5 {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.trainer_section2 .box .img-box {
+	border-radius: 15px;
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+}
+
+.trainer_section2 .box .img-box img {
+	width: 100%;
+}
+
+.trainer_section2 .box .social_box {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
