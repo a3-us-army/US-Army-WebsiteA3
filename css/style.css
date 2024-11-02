@@ -77,10 +77,25 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
+.hero_area2 {
+	height: 65vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background-image: url(../images/main-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
 
 .sub_page .hero_area {
-	height: auto;
+	height: 100;
 }
+
 
 .sub_page .who_section.layout_padding {
 	padding-top: 0;
@@ -392,7 +407,7 @@ a:focus {
 }
 
 .trainer_section {
-	background-image: url(../images/trainer-bg.jpg);
+	background-image: url(../images/main-bg.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -576,14 +591,15 @@ a:focus {
 }
 
 /* footer section*/
-.footer_section {
-	background-color: #fbfdfd;
-	padding: 20px;
-	font-weight: 500;
-}
+								.footer_section {
+								background-color: #9d0000;
+								padding: 20px;
+								padding-bottom: 5%;
+								font-weight: 500;
+							}
 
 .footer_section p {
-	color: #292929;
+	color: #ffffff;
 	margin: 0;
 	text-align: center;
 }
