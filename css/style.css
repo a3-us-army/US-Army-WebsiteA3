@@ -671,7 +671,7 @@ a:visited {
 }
 
 .trainer_section {
-	background-image: url(/images/about_background.png);
+	background-image: url(../images/about_background.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
