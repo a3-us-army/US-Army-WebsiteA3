@@ -197,7 +197,7 @@ ul.centeredList {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	background-image: url(../images/main-bg.png);
+	background-image: url(/images/main-bg.png);
 	background-size: cover;
 	background-attachment: flex;
 }
@@ -211,14 +211,14 @@ ul.centeredList {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	background-image: url(../images/main-bg.png);
+	background-image: url(/images/main-bg.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 .hero_area_other {
 	height: 6vh;
-	background-image: url(../images/main-bg.png);
+	background-image: url(/images/main-bg.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -345,7 +345,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-	background-image: url(../images/menu.png);
+	background-image: url(/images/menu.png);
 	background-size: 55px;
 }
 
@@ -475,7 +475,7 @@ h3 {
 }
 
 .us_section {
-	background-image: url(../images/about_background.png);
+	background-image: url(/images/about_background.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -537,7 +537,7 @@ a:visited {
 }
 
 .us_section2 {
-	background-image: url(../images/socials.jpg);
+	background-image: url(/images/socials.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -636,7 +636,7 @@ a:visited {
 }
 
 .trainer_section {
-	background-image: url(../images/main-bg.png);
+	background-image: url(/images/main-bg.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -688,14 +688,14 @@ a:visited {
 }
 
 .contact_section {
-	background-image: url(../images/about_background.png);
+	background-image: url(/images/about_background.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
 	text-align: center;
 }
 .contact_section h2 {
-	background-image: url(../images/about_background.png);
+	background-image: url(/images/about_background.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -818,14 +818,6 @@ a:visited {
 
 .info_items a {
 	position: relative;
-}
-
-.info_items .item .img-box.box-1 {
-	background-image: url(../images/discord.png);
-}
-
-.info_items .item .img-box.box-3 {
-	background-image: url(../images/envelope-white.png);
 }
 
 /* footer section*/
