@@ -187,6 +187,34 @@ ul.centeredList {
 	transform: translateX(-50%);
 }
 
+.heading_container2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: right;
+	-ms-flex-pack: right;
+	justify-content: right;
+	text-align: right;
+}
+
+.heading_container2 h2 {
+	font-weight: bold;
+	position: right;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.heading_container2 h2::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 55px;
+	height: 5px;
+	background-color: #ff2953;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
 /*header section*/
 .hero_area {
 	height: 100vh;
@@ -485,6 +513,13 @@ h3 {
 	padding-top: 25px;
 }
 
+.us_section a {
+	color: #03a9fc;
+}
+.us_section a:hover {
+	color: #00537c;
+}
+
 .us_section .us_container .box {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -727,6 +762,14 @@ a:visited {
 
 .contact_section .form_container {
 	padding: 45px 0 45px 15px;
+}
+
+.info_items .item .img-box.box-1 {
+	background-image: url(../images/discord.png);
+}
+
+.info_items .item .img-box.box-3 {
+	background-image: url(../images/envelope-white.png);
 }
 
 .contact_section input {
