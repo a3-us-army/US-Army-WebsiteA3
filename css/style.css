@@ -516,6 +516,10 @@ h3 {
 .us_section a {
 	color: #03a9fc;
 }
+
+.us_section a:visited {
+	color: #03a9fc;
+}
 .us_section a:hover {
 	color: #00537c;
 }
@@ -586,9 +590,7 @@ a:visited {
 	color: #03a9fc;
 }
 
-.us_section2 a:visited {
-	color: #03a9fc;
-}
+
 
 .us_section2 a:hover {
 	color: #00537c;
