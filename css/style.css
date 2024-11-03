@@ -719,6 +719,9 @@ a:visited {
 	background-attachment: fixed;
 	color: #ffffff;
 }
+.trainer_section a:hover {
+	color: #00537c;
+}
 
 .trainer_section .box {
 	margin-top: 55px;
