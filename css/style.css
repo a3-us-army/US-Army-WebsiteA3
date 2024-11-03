@@ -389,6 +389,10 @@ a:focus {
 	-ms-flex-align: center;
 	align-items: center;
 	color: #ffffff;
+	background-image: url(../images/main-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
 }
 .slider_section h4,
 h3 {
@@ -410,10 +414,11 @@ h3 {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	margin: 100px;
 }
 
 .slider_section .box {
-	margin: 125px 0;
+	margin: 100px;
 }
 
 .slider_section .detail-box {
@@ -454,6 +459,18 @@ h3 {
 	transition: transform 0.3s, -webkit-transform 0.3s;
 	text-transform: uppercase;
 	margin-top: 35px;
+}
+.slider_section #BRAVO {
+	color: #03a9fc;
+	border: 0;
+	padding: 0px 0px;
+
+	
+}
+.slider_section #BRAVO:hover {
+	color: #007bff;
+	background-color: transparent;
+
 }
 
 .slider_section .detail-box a:hover {
@@ -638,6 +655,25 @@ a:visited {
 	background-attachment: fixed;
 	color: #ffffff;
 	text-align: center;
+}
+.healthy_section .detail-box a {
+	display: inline-block;
+	padding: 8px 35px;
+	background-color: transparent;
+	border: 1.5px solid #ffffff;
+	color: #ffffff;
+	border-radius: 0px;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+	text-transform: uppercase;
+	margin-top: 35px;
+}
+
+.healthy_section .detail-box a:hover {
+	background-color: #ffffff;
+	color: #007bff;
 }
 
 .heathy_section h2 {
