@@ -585,6 +585,11 @@ a:visited {
 .us_section2 a {
 	color: #03a9fc;
 }
+
+.us_section2 a:visited {
+	color: #03a9fc;
+}
+
 .us_section2 a:hover {
 	color: #00537c;
 }
