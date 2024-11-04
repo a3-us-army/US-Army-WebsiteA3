@@ -708,6 +708,65 @@ a:visited {
 	color: #000000;
 }
 
+.staff_section {
+	background-image: url(../images/about_background.png);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+}
+.staff_section a:hover {
+	color: #ffffff;
+	background-color: #000;
+}
+.staff_section a:visited {
+	color: #ffffff;
+}
+
+.staff_section .box {
+	margin-top: 55px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+}
+
+.staff_section .box .name h5 {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.staff_section .box .img-box {
+	border-radius: 15px;
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+}
+
+.staff_section .box .img-box img {
+	width: 100%;
+}
+
+.staff_section .box .social_box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 225px;
+	padding: 12px 45px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	margin-top: -25px;
+}
+
 .trainer_section {
 	background-image: url(../images/about_background.png);
 	background-size: cover;
@@ -720,7 +779,6 @@ a:visited {
 .trainer_section a:visited {
 	color: #03a9fc;
 }
-
 
 .trainer_section .box {
 	margin-top: 55px;
