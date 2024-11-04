@@ -2,5 +2,5 @@
 <div align="center">
 <h1>CAG USSOF</h1>
 
-This is the offical CAG USSOF Website! Made by Xander and Buzz.
+This is the offical CAG USSOF Website! Made by Xander and Buzz (Vu).
 </div>
