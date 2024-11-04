@@ -464,13 +464,10 @@ h3 {
 	color: #03a9fc;
 	border: 0;
 	padding: 0px 0px;
-
-	
 }
 .slider_section #BRAVO:hover {
 	color: #007bff;
 	background-color: transparent;
-
 }
 
 .slider_section .detail-box a:hover {
@@ -606,8 +603,6 @@ a:visited {
 .us_section2 a {
 	color: #03a9fc;
 }
-
-
 
 .us_section2 a:hover {
 	color: #00537c;
