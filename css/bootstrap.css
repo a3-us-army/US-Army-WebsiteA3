@@ -4361,6 +4361,7 @@ input[type="button"].btn-block {
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+    
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
