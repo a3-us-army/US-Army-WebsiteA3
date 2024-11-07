@@ -265,6 +265,8 @@ ul.centeredList {
 .header_section .container-fluid {
 	padding-right: 25px;
 	padding-left: 25px;
+	background-color: #852b29;
+	background-image: url();
 }
 
 .header_section .nav_container {
