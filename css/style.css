@@ -825,6 +825,13 @@ a:visited {
 	border-radius: 50px;
 	margin-top: -25px;
 }
+
+.trainer_section2 a:hover {
+	color: #00537c;
+}
+.trainer_section2 a:visited {
+	color: #03a9fc;
+}
 .trainer_section2 {
 	background-image: url(../images/main-bg.png);
 	background-size: cover;
