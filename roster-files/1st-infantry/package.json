@@ -2,7 +2,7 @@
 	"name": "my-app",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://cag-ussof.org/roster",
+	"homepage": "https://cag-ussof.org/roster/1st-infantry",
 	"dependencies": {
 		"cra-template": "1.2.0",
 		"gh-pages": "^6.3.0",
