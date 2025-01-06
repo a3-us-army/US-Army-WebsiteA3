@@ -4,8 +4,8 @@ const MilitaryOrgChart = () => {
 	// Define the organizational structure as data
 	const orgData = {
 		commandElement: [
-			{ role: "Commander", name: "LT | A. Falcon" },
-			{ role: "Executive Officer", name: "LT | A. Eagle" },
+			{ role: "Platoon Leader", name: "LT | A. Falcon" },
+			{ role: "Executive Officer", name: "N/A" },
 		],
 		platoon_1: [
 			{
@@ -148,9 +148,9 @@ const MilitaryOrgChart = () => {
 										className="flex justify-between items-center bg-gray-800 p-3 rounded shadow-sm"
 									>
 										<span className="text-sm text-white">{member.role}</span>
-										<span className="text-white font-medium">
+										<span className="text-green-700 font-medium">
 											{member.name || (
-												<span className="text-red-500">Vacant</span>
+												<span className="text-gray-400">Vacant</span>
 											)}
 										</span>
 									</li>
