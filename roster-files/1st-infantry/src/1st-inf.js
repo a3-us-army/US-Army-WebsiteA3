@@ -418,7 +418,7 @@ const MilitaryOrgChart = () => {
 										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-red-500">Vacant</span>
+											<span className="text-gray-600">Closed</span>
 										)}
 									</div>
 								</div>
@@ -451,10 +451,10 @@ const MilitaryOrgChart = () => {
 								<div key={index} className="p-4 bg-gray-800 rounded-lg shadow">
 									<div className="text-sm text-white">{position.role}</div>
 									<div
-										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
+										className={`text-green-600 font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-red-500">Vacant</span>
+											<span className="text-gray-600">Vacant</span>
 										)}
 									</div>
 								</div>
@@ -481,7 +481,7 @@ const MilitaryOrgChart = () => {
 										<span className="text-sm text-white">{member.role}</span>
 										<span className="text-white font-medium">
 											{member.name || (
-												<span className="text-red-500">Vacant</span>
+												<span className="text-gray-600">Vacant</span>
 											)}
 										</span>
 									</li>
@@ -518,7 +518,7 @@ const MilitaryOrgChart = () => {
 										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-red-500">Vacant</span>
+											<span className="text-red-500">Closed</span>
 										)}
 									</div>
 								</div>
@@ -545,7 +545,7 @@ const MilitaryOrgChart = () => {
 										<span className="text-sm text-white">{member.role}</span>
 										<span className=" text-white font-medium">
 											{member.name || (
-												<span className="text-red-500">Vacant</span>
+												<span className="text-red-500">Closed</span>
 											)}
 										</span>
 									</li>
@@ -582,7 +582,7 @@ const MilitaryOrgChart = () => {
 										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-red-500">Vacant</span>
+											<span className="text-red-500">Closed</span>
 										)}
 									</div>
 								</div>
@@ -609,7 +609,7 @@ const MilitaryOrgChart = () => {
 										<span className="text-sm text-white">{member.role}</span>
 										<span className=" text-white font-medium">
 											{member.name || (
-												<span className="text-red-500">Vacant</span>
+												<span className="text-red-500">Closed</span>
 											)}
 										</span>
 									</li>
@@ -646,7 +646,7 @@ const MilitaryOrgChart = () => {
 										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-red-500">Vacant</span>
+											<span className="text-red-500">Closed</span>
 										)}
 									</div>
 								</div>
@@ -673,7 +673,7 @@ const MilitaryOrgChart = () => {
 										<span className="text-sm text-white">{member.role}</span>
 										<span className=" text-white font-medium">
 											{member.name || (
-												<span className="text-red-500">Vacant</span>
+												<span className="text-red-500">Closed</span>
 											)}
 										</span>
 									</li>
@@ -713,7 +713,7 @@ const MilitaryOrgChart = () => {
 										<span className="text-sm text-white">{member.role}</span>
 										<span className=" text-white font-medium">
 											{member.name || (
-												<span className="text-red-500">Vacant</span>
+												<span className="text-red-500">Closed</span>
 											)}
 										</span>
 									</li>
