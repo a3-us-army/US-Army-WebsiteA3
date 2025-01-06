@@ -418,7 +418,7 @@ const MilitaryOrgChart = () => {
 										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-gray-600">Closed</span>
+											<span className="text-red-500">Closed</span>
 										)}
 									</div>
 								</div>
