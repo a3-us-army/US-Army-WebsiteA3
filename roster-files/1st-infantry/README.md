@@ -1,7 +1,7 @@
 # How to push to production:
 
 ## Step 1.
-Make sure you are in the correct dir (`cd roster-files/rangers`)
+Make sure you are in the correct dir (`cd roster-files/1st-infantry`)
 
 Run the install command to install all dependencies.
 ```bash
@@ -16,18 +16,16 @@ npm run build
 ```
 
 ## Step 3.
-Rename the `build` folder to `rangers` (see ss below)
+Rename the `build` folder to `1st-infantry` (see ss below)
 <br>
 ![image](https://github.com/user-attachments/assets/2de95662-efee-43a9-bc24-19e531af182b)
-<br>
-![image](https://github.com/user-attachments/assets/e4e9c733-d405-431f-b108-03f7600fa471)
 
 ## Step 4.
-Delete the current `/roster/rangers` folder from the main dir.
+Delete the current `/roster/1st-infantry` folder from the main dir.
 <br>
 ![image](https://github.com/user-attachments/assets/8a68d57a-f7f6-43ce-8b11-15df9a175e59)
 
-Move the new `rangers` folder (inside the `/roster-files` dir)to the main dir to replace the old `/roster/rangers` folder.
+Move the new `1st-infantry` folder (inside the `/roster-files` dir)to the main dir to replace the old `/roster/1st-infantry` folder.
 
 ## Step 5.
 
