@@ -13,10 +13,14 @@ const MilitaryOrgChart = () => {
 				members: [
 					{ role: "Squad Leader", name: "SGT | H. Xander" },
 					{ role: "Engineer", name: "CPL | N. Phillips" },
-					{ role: "Medic", name: "" },
+					{ role: "Medic", name: "PVT | M. Josh" },
 					{ role: "Sniper", name: "PFC | J. Void" },
 					{ role: "Marksman/Spotter", name: "SPC | T. Luci" },
 				],
+			},
+			{
+				name: "",
+				members: [],
 			},
 			{
 				name: "Rifle Squad",
@@ -26,13 +30,6 @@ const MilitaryOrgChart = () => {
 					{ role: "SAW Operator", name: "PFC | F. Castle" },
 					{ role: "Rifleman", name: "" },
 					{ role: "Rifleman", name: "" },
-				],
-			},
-			{
-				name: "Stryker Crew",
-				members: [
-					{ role: "Driver", name: "" },
-					{ role: "Gunner", name: "" },
 				],
 			},
 		],
@@ -48,6 +45,10 @@ const MilitaryOrgChart = () => {
 				],
 			},
 			{
+				name: "",
+				members: [],
+			},
+			{
 				name: "Rifle Squad",
 				members: [
 					{ role: "Squad Leader", name: "" },
@@ -57,19 +58,12 @@ const MilitaryOrgChart = () => {
 					{ role: "Rifleman", name: "" },
 				],
 			},
-			{
-				name: "Stryker Crew",
-				members: [
-					{ role: "Driver", name: "" },
-					{ role: "Gunner", name: "" },
-				],
-			},
 		],
 	};
 
 	// Calculate statistics using useMemo to optimize performance
 	const stats = useMemo(() => {
-		let totalPositions = orgData.commandElement.length;
+		let totalPositions = orgData.commandElement.length -2;
 		let filled = orgData.commandElement.filter(
 			(pos) => pos.name && pos.name !== "N/A",
 		).length;
@@ -90,7 +84,7 @@ const MilitaryOrgChart = () => {
 			totalPositions,
 			filled,
 			vacant: totalPositions - filled,
-			teams: orgData.platoon_1.length + orgData.platoon_2.length,
+			teams: orgData.platoon_1.length + orgData.platoon_2.length -2,
 		};
 	}, []);
 
