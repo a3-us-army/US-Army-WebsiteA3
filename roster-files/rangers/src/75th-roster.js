@@ -9,13 +9,15 @@ const MilitaryOrgChart = () => {
 		],
 		platoon_1: [
 			{
-				name: "Special Purpose Squad",
+				name: "Weapons Squad",
 				members: [
-					{ role: "Squad Leader", name: "SGT | H. Xander" },
+					{ role: "Squad Leader", name: "SFC | L. Lazarus" },
+					{ role: "Team Leader", name: "SGT | H. Xander" },
 					{ role: "Engineer", name: "CPL | N. Phillips" },
 					{ role: "Medic", name: "PVT | M. Josh" },
-					{ role: "Sniper", name: "PFC | J. Void" },
-					{ role: "Marksman/Spotter", name: "SPC | T. Luci" },
+					{ role: "Machine Gunner", name: "PFC | F. Castle" },
+					{ role: "Rifleman", name: "" },
+					{ role: "Rifleman", name: "" },
 				],
 			},
 			{
@@ -23,11 +25,13 @@ const MilitaryOrgChart = () => {
 				members: [],
 			},
 			{
-				name: "Rifle Squad",
+				name: "Recon Squad",
 				members: [
-					{ role: "Squad Leader", name: "SFC | L. Lazarus" },
-					{ role: "Medic", name: "" },
-					{ role: "SAW Operator", name: "PFC | F. Castle" },
+					{ role: "Squad Leader", name: "SSG | T. Luci" },
+					{ role: "Sniper", name: "PFC | J. Void" },
+					{ role: "Marksman", name: "PVT | N. Fates" },
+					{ role: "Medic", name: "PVT | M. Cabrera" },
+					{ role: "SAW Gunner", name: "PVT | R. Mckinney" },
 					{ role: "Rifleman", name: "" },
 					{ role: "Rifleman", name: "" },
 				],
@@ -35,13 +39,15 @@ const MilitaryOrgChart = () => {
 		],
 		platoon_2: [
 			{
-				name: "Heavy Weapons Squad",
+				name: "Rifle Squad",
 				members: [
 					{ role: "Squad Leader", name: "" },
+					{ role: "Team Leader", name: "" },
 					{ role: "Medic", name: "" },
 					{ role: "Machine Gunner", name: "" },
-					{ role: "Machine Gunner Assistant", name: "" },
-					{ role: "Grenadier", name: "" },
+					{ role: "Rifleman", name: "" },
+					{ role: "Rifleman", name: "" },
+					{ role: "Rifleman", name: "" },
 				],
 			},
 			{
@@ -52,8 +58,10 @@ const MilitaryOrgChart = () => {
 				name: "Rifle Squad",
 				members: [
 					{ role: "Squad Leader", name: "" },
+					{ role: "Team Leader", name: "" },
 					{ role: "Medic", name: "" },
-					{ role: "SAW Operator", name: "" },
+					{ role: "Machine Gunner", name: "" },
+					{ role: "Rifleman", name: "" },
 					{ role: "Rifleman", name: "" },
 					{ role: "Rifleman", name: "" },
 				],
@@ -63,7 +71,7 @@ const MilitaryOrgChart = () => {
 
 	// Calculate statistics using useMemo to optimize performance
 	const stats = useMemo(() => {
-		let totalPositions = orgData.commandElement.length -2;
+		let totalPositions = orgData.commandElement.length - 2;
 		let filled = orgData.commandElement.filter(
 			(pos) => pos.name && pos.name !== "N/A",
 		).length;
@@ -84,7 +92,7 @@ const MilitaryOrgChart = () => {
 			totalPositions,
 			filled,
 			vacant: totalPositions - filled,
-			teams: orgData.platoon_1.length + orgData.platoon_2.length -2,
+			teams: orgData.platoon_1.length + orgData.platoon_2.length - 2,
 		};
 	}, []);
 
