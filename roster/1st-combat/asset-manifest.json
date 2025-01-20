@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/roster/1st-combat/static/css/main.74c342ad.css",
+    "main.js": "/roster/1st-combat/static/js/main.379b912b.js",
+    "index.html": "/roster/1st-combat/index.html",
+    "main.74c342ad.css.map": "/roster/1st-combat/static/css/main.74c342ad.css.map",
+    "main.379b912b.js.map": "/roster/1st-combat/static/js/main.379b912b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74c342ad.css",
+    "static/js/main.379b912b.js"
+  ]
+}
