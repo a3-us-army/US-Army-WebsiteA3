@@ -4,74 +4,86 @@ const MilitaryOrgChart = () => {
 	// Define the organizational structure as data
 	const orgData = {
 		commandElement: [
-			{ role: "Platoon Leader", name: "LT | A. Falcon" },
-			{ role: "Executive Officer", name: "N/A" },
+			{ role: "Platoon Leader", name: "2LT | A. Falcon" },
+			{ role: "Platoon Sergeant", name: "" },
+			{ role: "Platoon Medic", name: "" },
+			{ role: "Mortar Op.", name: "" },
+			{ role: "Mortar Op.", name: "" },
+			{ role: "Rifleman", name: "" },
 		],
 		platoon_1: [
 			{
-				name: "Weapons Squad",
+				name: `Weapons Squad - "Titan 1-1"`,
 				members: [
 					{ role: "Squad Leader", name: "SFC | L. Lazarus" },
 					{ role: "Team Leader", name: "SGT | H. Xander" },
 					{ role: "Engineer", name: "CPL | N. Phillips" },
-					{ role: "Medic", name: "PVT | M. Josh" },
-					{ role: "Machine Gunner", name: "PFC | F. Castle" },
+					{ role: "Medic", name: "" },
+					{ role: "SAW Gunner", name: "PFC | F. Castle" },
+					{ role: "Team Lead", name: "" },
+					{ role: "Machine Gunner", name: "" },
+					{ role: "Machine Gunner Assistant", name: "" },
+					{ role: "Rifleman", name: "" },
+				],
+			},
+			{
+				name: `Rifle Squad - "Titan 1-2"`,
+				members: [
+					{ role: "Squad Leader", name: "SSG | D. Gator" },
+					{ role: "Team Lead", name: "" },
+					{ role: "Medic", name: "" },
+					{ role: "SAW Gunner", name: "" },
+					{ role: "Rifleman", name: "" },
+					{ role: "Team Lead", name: "" },
+					{ role: "Grenadier", name: "" },
 					{ role: "Rifleman", name: "" },
 					{ role: "Rifleman", name: "" },
 				],
 			},
 			{
-				name: "",
-				members: [],
-			},
-			{
-				name: "Recon Squad",
+				name: `Recon Squad - "Titan 1-3"`,
 				members: [
-					{ role: "Squad Leader", name: "SSG | T. Luci" },
-					{ role: "Sniper", name: "PFC | J. Void" },
-					{ role: "Marksman", name: "PVT | N. Fates" },
-					{ role: "Medic", name: "PVT | M. Cabrera" },
-					{ role: "SAW Gunner", name: "PVT | R. Mckinney" },
-					{ role: "Rifleman", name: "" },
-					{ role: "Rifleman", name: "" },
+					{ role: "Squad Lead", name: "SSG | T. Luci" },
+					{ role: "Sniper ", name: "PFC | J. Void" },
+					{ role: "Marksman", name: "" },
 				],
 			},
 		],
-		platoon_2: [
-			{
-				name: "Rifle Squad",
-				members: [
-					{ role: "Squad Leader", name: "" },
-					{ role: "Team Leader", name: "" },
-					{ role: "Medic", name: "" },
-					{ role: "Machine Gunner", name: "" },
-					{ role: "Rifleman", name: "" },
-					{ role: "Rifleman", name: "" },
-					{ role: "Rifleman", name: "" },
-				],
-			},
-			{
-				name: "",
-				members: [],
-			},
-			{
-				name: "Rifle Squad",
-				members: [
-					{ role: "Squad Leader", name: "" },
-					{ role: "Team Leader", name: "" },
-					{ role: "Medic", name: "" },
-					{ role: "Machine Gunner", name: "" },
-					{ role: "Rifleman", name: "" },
-					{ role: "Rifleman", name: "" },
-					{ role: "Rifleman", name: "" },
-				],
-			},
-		],
+		// platoon_2: [
+		// 	{
+		// 		name: "Rifle Squad",
+		// 		members: [
+		// 			{ role: "Squad Leader", name: "" },
+		// 			{ role: "Team Leader", name: "" },
+		// 			{ role: "Medic", name: "" },
+		// 			{ role: "Machine Gunner", name: "" },
+		// 			{ role: "Rifleman", name: "" },
+		// 			{ role: "Rifleman", name: "" },
+		// 			{ role: "Rifleman", name: "" },
+		// 		],
+		// 	},
+		// 	{
+		// 		name: "",
+		// 		members: [],
+		// 	},
+		// 	{
+		// 		name: "Rifle Squad",
+		// 		members: [
+		// 			{ role: "Squad Leader", name: "" },
+		// 			{ role: "Team Leader", name: "" },
+		// 			{ role: "Medic", name: "" },
+		// 			{ role: "Machine Gunner", name: "" },
+		// 			{ role: "Rifleman", name: "" },
+		// 			{ role: "Rifleman", name: "" },
+		// 			{ role: "Rifleman", name: "" },
+		// 		],
+		// 	},
+		// ],
 	};
 
 	// Calculate statistics using useMemo to optimize performance
 	const stats = useMemo(() => {
-		let totalPositions = orgData.commandElement.length - 2;
+		let totalPositions = orgData.commandElement.length;
 		let filled = orgData.commandElement.filter(
 			(pos) => pos.name && pos.name !== "N/A",
 		).length;
@@ -83,16 +95,16 @@ const MilitaryOrgChart = () => {
 		});
 
 		// biome-ignore lint/complexity/noForEach: <explanation>
-		orgData.platoon_2.forEach((team) => {
-			totalPositions += team.members.length;
-			filled += team.members.filter((member) => member.name).length;
-		});
+		// orgData.platoon_2.forEach((team) => {
+		// 	totalPositions += team.members.length;
+		// 	filled += team.members.filter((member) => member.name).length;
+		// });
 
 		return {
 			totalPositions,
 			filled,
 			vacant: totalPositions - filled,
-			teams: orgData.platoon_1.length + orgData.platoon_2.length - 2,
+			teams: orgData.platoon_1.length,
 		};
 	}, []);
 
@@ -122,10 +134,10 @@ const MilitaryOrgChart = () => {
 								<div key={index} className="p-4 bg-gray-800 rounded-lg shadow">
 									<div className="text-sm text-white">{position.role}</div>
 									<div
-										className={`text-white font-medium ${position.name === "N/A" ? "text-white" : ""}`}
+										className={`text-green-700 font-medium ${position.name === "N/A" ? "text-white" : ""}`}
 									>
 										{position.name || (
-											<span className="text-red-500">Vacant</span>
+											<span className="text-red-500">Closed</span>
 										)}
 									</div>
 								</div>
@@ -162,7 +174,7 @@ const MilitaryOrgChart = () => {
 					))}
 				</div>
 
-				{/* Header 2*/}
+				{/* Header 2
 				<div className="bg-amber-500 p-8 text-center border-b-4 border-amber-300">
 					<h1 className="text-4xl font-bold text-gray-800 mb-2">
 						75th Regiment 3rd Battalion
@@ -173,7 +185,7 @@ const MilitaryOrgChart = () => {
 					</div>
 				</div>
 
-				{/* Command Section 2 */}
+				 Command Section 2
 				<div className="p-6 border-b bg-gray-600">
 					<div className="max-w-2xl mx-auto">
 						<h3 className="text-lg font-semibold mb-4 text-white">
@@ -197,7 +209,7 @@ const MilitaryOrgChart = () => {
 					</div>
 				</div>
 
-				{/* Units Grid 2*/}
+				{}
 				<div className="p-6 grid md:grid-cols-3 gap-6">
 					{orgData.platoon_2.map((team, teamIndex) => (
 						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
@@ -223,9 +235,9 @@ const MilitaryOrgChart = () => {
 							</ul>
 						</div>
 					))}
-				</div>
+				</div>*/}
 
-				{/* Statistics Footer */}
+				{/* Stats */}
 				<div className="bg-gray-600 p-6 border-t">
 					<div className="max-w-3xl mx-auto grid grid-cols-4 gap-6 text-center">
 						<div className="bg-gray-800 p-4 rounded-lg shadow-sm">
