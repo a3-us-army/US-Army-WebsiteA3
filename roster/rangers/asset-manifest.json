@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/roster/rangers/static/css/main.67385408.css",
-    "main.js": "/roster/rangers/static/js/main.cdb7d785.js",
+    "main.js": "/roster/rangers/static/js/main.aab5ae23.js",
     "index.html": "/roster/rangers/index.html",
     "main.67385408.css.map": "/roster/rangers/static/css/main.67385408.css.map",
-    "main.cdb7d785.js.map": "/roster/rangers/static/js/main.cdb7d785.js.map"
+    "main.aab5ae23.js.map": "/roster/rangers/static/js/main.aab5ae23.js.map"
   },
   "entrypoints": [
     "static/css/main.67385408.css",
-    "static/js/main.cdb7d785.js"
+    "static/js/main.aab5ae23.js"
   ]
 }

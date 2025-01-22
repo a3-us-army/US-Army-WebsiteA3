@@ -45,7 +45,7 @@ const MilitaryOrgChart = () => {
 				members: [
 					{ role: "Squad Lead", name: "SSG | T. Luci" },
 					{ role: "Sniper ", name: "PFC | J. Void" },
-					{ role: "Marksman", name: "" },
+					{ role: "Marksman", name: "PVT | C. Ratcliff" },
 				],
 			},
 		],
@@ -94,7 +94,6 @@ const MilitaryOrgChart = () => {
 			filled += team.members.filter((member) => member.name).length;
 		});
 
-		// biome-ignore lint/complexity/noForEach: <explanation>
 		// orgData.platoon_2.forEach((team) => {
 		// 	totalPositions += team.members.length;
 		// 	filled += team.members.filter((member) => member.name).length;
